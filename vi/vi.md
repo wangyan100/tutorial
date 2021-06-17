@@ -437,6 +437,21 @@ set 命令可以对 vi 编辑器进行一些设置。使用 set 命令需要进�
 
 ```
 :s/search/replace/g
+以下命令将文中所有的字符串idiots替换成managers：
+
+:1,$s/idiots/manages/g
+
+通常我们会在命令中使用%指代整个文件做为替换范围：
+
+:%s/search/replace/g
+
+以下命令指定只在第5至第15行间进行替换:
+
+:5,15s/dog/cat/g
+
+以下命令指定只在当前行至文件结尾间进行替换:
+
+:.,$s/dog/cat/g
 ```
 
 search 为检索的文本，replace 为要替换的文本，g 表示全局替换。
