@@ -28,3 +28,9 @@ find <DIR>  -name “*.gz” |xargs zgrep -H “<SEARCH_PATTERN>”
 If you wanted only the list of matching files, use -l:
 
 find <DIR>  -name “*.gz” |xargs zgrep -l “<SEARCH_PATTERN>”
+
+
+
+## sudo du -h --max-depth=1 /opt/deploy 
+
+![image-20210809090531158](linux.assets/image-20210809090531158.png)
