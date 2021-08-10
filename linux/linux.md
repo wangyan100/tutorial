@@ -1,9 +1,12 @@
 
+```
 
 at currentl directory find gz file but exclude path "*deprecated/*" and "./*saf*/*" which contains P.0421285.1.01
 find . -name "*.gz" ! -path "*deprecated/*"   ! -path "./*saf*/*" |xargs zgrep -l P.0421285.1.01
 
+```
 
+```
 [ywang@VSDEDC001APESB2 deploy]$  find . -name "*.gz" ! -path "*deprecated/*"   ! -path "./*saf*/*" |xargs zgrep -l P.0421285.1.01
 ./work-project/log/2021-07-21.gz
 ./work-project-rest/log/2021-07-21.gz
@@ -16,6 +19,22 @@ find . -name "*.gz" ! -path "*deprecated/*"   ! -path "./*saf*/*" |xargs zgrep -
 ./work-project-sap-hcp500/log/out.log.2021-07-21.0.gz
 [ywang@VSDEDC001APESB2 deploy]$
 
+[ywang@VSDEDC001APESB2 deploy]$ find . -name "*.gz" ! -path "*deprecated*" ! -path "*saf*" |xargs zgrep -li THOMAS
+./hr-employee-sima/log/2021-07-06.gz
+./hr-employee-sima/log/2021-07-08.gz
+./hr-employee-sima/log/2021-07-13.gz
+./hr-employee-sima/log/2021-07-22.gz
+./hr-employee-sima/log/2021-07-26.gz
+./hr-employee-sima/log/2021-07-28.gz
+./hr-employee-sima/log/2021-07-30.gz
+./hr-employee-sima/log/2021-08-03.gz
+./hr-employee-sima/log/2021-08-04.gz
+./hr-employee-sima/log/2021-08-06.gz
+./hr-employee-sima/log/2021-08-09.gz
+./work-project/log/2021-05-31.gz
+
+
+```
 
 zgrep -H P.0421285.1.01 ./work-project-sap-hcp100/log/out.log.2021-07-21.0.gz
 
