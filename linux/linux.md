@@ -33,8 +33,36 @@ find . -name "*.gz" ! -path "*deprecated/*"   ! -path "./*saf*/*" |xargs zgrep -
 ./hr-employee-sima/log/2021-08-09.gz
 ./work-project/log/2021-05-31.gz
 
+find file name ending with gz and contains 08-06 , check if those file contains P.0421572.1.12
+
+[ywang@VSDEDC001APESB2 deploy]$ find . -name "*.gz" -a -name "*08-06*" |xargs zgrep -l P.0421572.1.12
+./work-project/log/2021-08-06.gz
+./work-project-rest/log/2021-08-06.gz
+./work-project-rest-saf/log/2021-08-06.gz
+./work-project-db-mssql-horlemann2/log/2021-08-06.gz
+./work-project-db-saf-mssql-horlemann2/log/2021-08-06.gz
+./work-project-db-mssql-baan/log/2021-08-06.gz
+./work-project-db-saf-mssql-baan/log/2021-08-06.gz
+./work-project-sap-hcp100/log/out.log.2021-08-06.0.gz
+./work-project-sap-hcp100-saf/log/2021-08-06.gz
+./work-project-sap-hcp200/log/out.log.2021-08-06.0.gz
+./work-project-sap-hcp200-saf/log/2021-08-06.gz
+./work-project-sap-hcp400/log/out.log.2021-08-06.0.gz
+./work-project-sap-hcp400-saf/log/2021-08-06.gz
+./work-project-sap-hcp600/log/out.log.2021-08-06.0.gz
+./work-project-sap-hcp600-saf/log/2021-08-06.gz
+./work-project-sap-hcp500-saf/log/2021-08-06.gz
+./work-project-sap-hcp500/log/out.log.2021-08-06.0.gz
+./work-project-sap-t11/log/out.log.2021-08-06.0.gz
+./work-project-sap-t11-saf/log/2021-08-06.gz
+./work-project-sap-p11/log/out.log.2021-08-06.0.gz
+./work-project-sap-p11-saf/log/2021-08-06.gz
+
+
 
 ```
+
+
 
 zgrep -H P.0421285.1.01 ./work-project-sap-hcp100/log/out.log.2021-07-21.0.gz
 
