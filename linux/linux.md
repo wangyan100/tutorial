@@ -2,7 +2,7 @@
 
 #### 30 find
 
-[30 finds usecases ](./35find.jpg)
+![30 finds usecases ](./linux.assets/35find.jpg)
 
 
 ```
