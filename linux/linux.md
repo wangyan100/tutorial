@@ -1,4 +1,10 @@
 
+
+#### 30 find
+
+[30 finds usecases ](./35find.jpg)
+
+
 ```
 
 at currentl directory find gz file but exclude path "*deprecated/*" and "./*saf*/*" which contains P.0421285.1.01
